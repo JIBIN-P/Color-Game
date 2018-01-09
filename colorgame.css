@@ -1,0 +1,21 @@
+body {
+   background: #232323;
+}
+
+#container {
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+#h1start {
+   color: whitesmoke;
+}
+
+.square {
+   width: 30%;
+   padding-bottom: 30%;
+   float: left;
+   margin: 1.66%;
+   background: red;
+   border-radius: 25%;
+}
