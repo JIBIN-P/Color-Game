@@ -11,6 +11,10 @@ body {
    color: whitesmoke;
 }
 
+#message {
+   color: whitesmoke;
+}
+
 .square {
    width: 30%;
    padding-bottom: 30%;
