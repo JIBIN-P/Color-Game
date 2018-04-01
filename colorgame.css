@@ -11,8 +11,8 @@ body {
    color: whitesmoke;
 }
 
-#message {
-   color: whitesmoke;
+.blueButton {
+    background: blue;
 }
 
 .square {
@@ -22,4 +22,11 @@ body {
    margin: 1.66%;
    background: red;
    border-radius: 25%;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black;
 }
