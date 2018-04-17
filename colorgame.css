@@ -57,7 +57,7 @@ button:hover {
    margin: 1.66%;
    background: red;
    border-radius: 25%;
-   transition: all 1s;
+   transition: background 2s;
 }
 
 #stripe {
