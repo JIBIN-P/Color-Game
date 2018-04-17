@@ -18,6 +18,7 @@ easyMode.addEventListener("click", function() {
   colors = generateRandomColors(numSquares);
   pickedColor = randomColor();
   display.textContent = pickedColor;
+
   for (let i = 0; i < divs.length; i++) {
     if(colors[i]) {
       divs[i].style.background = colors[i];
@@ -35,6 +36,7 @@ hardMode.addEventListener("click", function() {
   colors = generateRandomColors(numSquares);
   pickedColor = randomColor();
   display.textContent = pickedColor;
+  
   for (let i = 0; i < divs.length; i++) {
     divs[i].style.display = "block";
     divs[i].style.background = colors[i];
@@ -43,7 +45,7 @@ hardMode.addEventListener("click", function() {
 
 newColors.addEventListener("click", function() {
 	//Every new game should start how it looked in the beginning
-	h1.style.background = "#232323";
+  h1.style.background = "#4682b4";
   //generate all new colors
   colors = generateRandomColors(numSquares);
   //pick a new random color from the array
@@ -51,6 +53,7 @@ newColors.addEventListener("click", function() {
   //change colordisplay to resemble the picked color
   display.textContent = pickedColor;
   //change the colors of the sqaure 
+
 	for (let i = 0; i < divs.length; i++) {
 		//Assigning colors to the sqares
 		divs[i].style.backgroundColor = colors[i];
@@ -64,6 +67,7 @@ for (let i = 0; i < divs.length; i++) {
    divs[i].addEventListener("click", function() {
    //Matching The pattern
    var clickedColor = this.style.backgroundColor;
+
    if(clickedColor === pickedColor) {
 		//Change the Background of the h1 to th same background as the selected color
      h1.style.background = pickedColor;
@@ -84,6 +88,7 @@ for (let i = 0; i < divs.length; i++) {
 
 //Function for changing all the squares to the picked color is answer is correct
 function changeColor() {
+
 	for (let i = 0; i < divs.length; i++) {
 		divs[i].style.backgroundColor = pickedColor;
 		
@@ -101,6 +106,7 @@ function generateRandomColors(num) {
   //make an array
   var arr = [];
   //add num colors to the array
+
   for (let i = 0; i < num; i++) {
 	 //Creating a function for generating random rgb values and pushing it into the array
 	 arr.push(rgbColors());

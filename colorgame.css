@@ -1,5 +1,7 @@
 body {
-   background: #232323;
+	background: #232323;
+	font-family: "Montserrat", "Avenir";
+	margin: 0%;
 }
 
 #container {
@@ -8,11 +10,44 @@ body {
 }
 
 #h1start {
-   color: whitesmoke;
+   color: white;
+	text-align: center; 
+	background: #4682b4;
+	line-height: 1.1;
+	padding: 20px 0px;
+	margin: 0%;
+	text-transform: uppercase;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+button {
+	color: #4682b4;
+	background: transparent;
+	border: transparent;
+	font-weight: 800; 
+	height: 100%;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	text-transform: uppercase;
+}
+
+button:hover {
+	background: #4682b4;
+	color: white;
 }
 
 .blueButton {
-    background: blue;
+    background: #4682b4;
+    color: white;
 }
 
 .square {
@@ -22,11 +57,12 @@ body {
    margin: 1.66%;
    background: red;
    border-radius: 25%;
+   transition: all 1s;
 }
 
 #stripe {
     background: white;
     height: 30px;
-    text-align: center;
-    color: black;
+	text-align: center;
+	margin-bottom: 10px;
 }
