@@ -44,6 +44,10 @@ hardMode.addEventListener("click", function() {
 })
 
 newColors.addEventListener("click", function() {
+	if(newColors.textContent == "Play Again ?") {
+		newColors.textContent = "New Colors";
+		messageDisplay.textContent = " ";
+  }
 	//Every new game should start how it looked in the beginning
   h1.style.background = "#4682b4";
   //generate all new colors

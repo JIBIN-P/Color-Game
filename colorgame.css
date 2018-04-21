@@ -26,12 +26,14 @@ body {
 #message {
 	display: inline-block;
 	width: 20%;
+	font-weight: bold;
 }
 
 button {
 	color: #4682b4;
-	background: transparent;
-	border: transparent;
+	background: none;
+	border: none;
+	outline: none;
 	font-weight: 800; 
 	height: 100%;
 	letter-spacing: 1px;
