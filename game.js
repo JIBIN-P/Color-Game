@@ -1,5 +1,9 @@
-var colors = generateRandomColors(6);
+/* TODO:1.Create a function for reset.
+        2.Call the reset function inside the init() method.
+        3.Refactor both the modes.
+*/
 
+var colors = generateRandomColors(6);
 var numSquares = 6;  //To avoid the bug for reset
 var divs = document.getElementsByClassName("square");
 var pickedColor = randomColor();
@@ -86,16 +90,13 @@ for (let i = 0; i < divs.length; i++) {
 	  //Adding a span and modifying it saying incorrect instead of alert
 	  messageDisplay.textContent = "Try Again";
    }
-   });
-   
+   });   
 }
 
 //Function for changing all the squares to the picked color is answer is correct
 function changeColor() {
-
 	for (let i = 0; i < divs.length; i++) {
 		divs[i].style.backgroundColor = pickedColor;
-		
 	}
 }
 
@@ -113,8 +114,7 @@ function generateRandomColors(num) {
 
   for (let i = 0; i < num; i++) {
 	 //Creating a function for generating random rgb values and pushing it into the array
-	 arr.push(rgbColors());
-    
+	 arr.push(rgbColors());    
   }
   //return that array
   return arr;
@@ -124,12 +124,9 @@ function generateRandomColors(num) {
 function rgbColors() {
   //pick red from 0-255
   var r = Math.floor(Math.random() * 256);
-  
   //pick green from 0-255
 	var g = Math.floor(Math.random() * 256);
-
   //pick blue from 0-255
 	var b = Math.floor(Math.random() * 256);
-
 	return "rgb("+ r +", " + g +", " + b +")";
 }
